@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Members | Oloo Sports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        
+        dl {
+            align-items: center;
+            width: 50%;
+            margin: auto;
+        }
+        
+        dt {
+            color: #007bff;
+        }
+        
+        h2 {
+            color: #007bff;
+            text-align: center;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            background: #f1f1f1;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        form {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        input {
+            padding: 8px;
+            width: 70%;
+            margin-bottom: 5px;
+        }
+        
+        button {
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Team Members</h1>
+    </header>
+
+    <div class="container">
+        <div class="section" id="goalkeeper">
+            <h2>Goalkeeper</h2>
+            <ul id="goalkeeper-list"></ul>
+            <form onsubmit="addPlayer(event, 'goalkeeper')">
+                <input type="text" placeholder="Enter player name" required />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div class="section" id="defence">
+            <h2>Defence</h2>
+            <ul id="defence-list"></ul>
+            <form onsubmit="addPlayer(event, 'defence')">
+                <input type="text" placeholder="Enter player name" required />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div class="section" id="midfield">
+            <h2>Midfield</h2>
+            <ul id="midfield-list"></ul>
+            <form onsubmit="addPlayer(event, 'midfield')">
+                <input type="text" placeholder="Enter player name" required />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div class="section" id="forward">
+            <h2>Forward</h2>
+            <ul id="forward-list"></ul>
+            <form onsubmit="addPlayer(event, 'forward')">
+                <input type="text" placeholder="Enter player name" required />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div class="section" id="striker">
+            <h2>Striker</h2>
+            <ul id="striker-list"></ul>
+            <form onsubmit="addPlayer(event, 'striker')">
+                <input type="text" placeholder="Enter player name" required />
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="team.js"></script>
+    <h1>The Team Members</h1>
+    <dl style="align-items: center;">
+        <dt>Goalkepers</dt>
+        <dd>David Raya</dd>
+        <dd>Kepa Santos</dd>
+        <dt>Defence</dt>
+        <dd>William Saliba</dd>
+        <dd>Gabriel Malghales</dd>
+        <dd>Jurien Timber</dd>
+        <dd>Myle-lewis skelly</dd>
+        <dd>White</dd>
+        <dd>Calafiori</dd>
+        <dd>Haeneciape</dd>
+        <dt>Midfield</dt>
+        <dd>Martin Odegard</dd>
+        <dd>Declan Rice</dd>
+        <dd>MIkelMerino</dd>
+        <dd>Eze</dd>
+        <dd>Martin Zubemendi</dd>
+        <dd>Ethan Nuwaneri</dd>
+        <dd> 18Christian norgard</dd>
+
+        <dt>Forward</dt>
+        <dd>Bukayo Saka</dd>
+        <dd>Lessandro Trosard</dd>
+        <dd>Gabriel Martineli</dd>
+        <dd>Noni madueke</dd>
+        <dt>Strikers</dt>
+        <dd>Victor Gyokores</dd>
+        <dd>Kai haverts</dd>
+        <dd>Gabriel Jesus</dd>
+    </dl>
+
+    </head>
+
+</body>
+
+</html>
